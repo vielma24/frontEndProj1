@@ -1,0 +1,60 @@
+.container {
+  background-color: rgb(108, 145, 156);
+}
+
+.header {
+  color: white;
+}
+
+form {
+  background-color: white;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  margin: 0 auto;
+  padding: 1em;
+  width: auto;
+}
+
+div.header {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.panel-default {
+  background-color: white;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  flex-wrap: wrap;
+  overflow: auto;
+  text-align: center;
+  width: auto;
+}
+
+.panel-body ul {
+  border-bottom: 3px solid transparent;
+  color: #337ab7;
+  display: inline-flex;
+  font-size: 20px;
+  padding: 50px 0 50px 0;
+}
+
+.panel-body ul li {
+  border: 0.5px solid lightgray;
+  margin: 10px 15px 10px 15px;
+  width: auto;
+}
+
+footer {
+  bottom: 10px;
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, .5);
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, .5);
+}
