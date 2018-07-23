@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <a class="navbar-brand" href="#">ConnectMe</a>
   </nav><br><br><br><br><br>
-  <em><p class="text-center">Progress</p></em>
+  <em><p class="text-center"></p></em>
   <div class="progress">
     <div class="progress-bar" style="width:100%"></div>
   </div><br>
@@ -22,14 +22,16 @@
     <form data-enter-website="form">
       <div class="form-group">
         <p>What do you want your link to be?</p>
-        <input class="form-control" type="websiteLink" name="websiteLink" required>
+        <input id="connectmelink" class="form-control" type="connectmelink" name="connectmelink" required>
       </div>
       <div class="form-group">
         <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+        <input class="form-control d-none" data-recaptcha="true" data-error="Please complete the Captcha">
         <div class="help-block with-errors"></div>
       </div>
-      <input type="submit" class="btn btn-primary btn-send" value="Next">
+      <div class="buttonHolder">
+        <input type="submit" class="btn btn-primary btn-send" value="Next" style="width:20%;">
+      </div>
     </form>
     <nav class="page-footer font-small">
       <div class="container">
@@ -65,7 +67,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
-  <script src="scripts/validator.js"></script>
+  <script src="scripts/remotedatastore.js" charset="utf-8"></script>
+  <script src="scripts/userdata.js" charset="utf-8"></script>
+  <script src="scripts/connectmelinkformhandler.js"></script>
+  <script src="scripts/connectmelink.js"></script>
+  <!--<script src="scripts/validator.js"></script> -->
 </body>
 
 </html>

@@ -19,32 +19,35 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  </nav><br><br><br><br><br>
-  <em><p class="text-center">Progress</p></em>
+  </nav><br><br><br>
+  <em><p class="text-center"></p></em>
   <div class="progress">
-    <div class="progress-bar" style="width:20%"></div>
+    <div class="progress-bar" style="width:20%">
+    </div>
   </div><br>
   <section class="backgroundColor">
-    <form data-create-account="form">
-      <div class="form-group">
-        <label for="firstname">First Name</label>
-        <input class="form-control" type="firstname" name="firstname" required>
-      </div>
-      <div class="form-group">
-        <label for="lastname">Last Name</label>
-        <input class="form-control" type="lastname" name="lastname" required>
-      </div><br>
-      <div class="form-group">
-        <label for="profile picture">Upload Profile Picture</label>
-        <label class="btn btn-default"></label>
-        <input type="file">
-      </div><br>
-      <div class="form-group">
-        <label for="location">Location</label>
-        <input class="form-control" type="location" name="location" required>
-      </div>
-      <button type="next" class="btn btn-primary">Next</button>
-    </form>
+      <form data-create-account="form" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input class="form-control" type="firstname" name="firstname" required>
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input class="form-control" type="lastname" name="lastname" required>
+        </div>
+        <div class="form-group">
+          <label for="profile picture">Upload Profile Picture</label>
+          <label class="btn btn-default"></label>
+          <input class="profilepicture" name="profilepicturefile" type="file">
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input class="form-control" type="location" name="location" required>
+        </div>
+        <div class="buttonHolder">
+          <button type="submit" class="btn btn-primary" style="width:20%">Next</button>
+        </div>
+      </form>
     <nav class="page-footer font-small">
       <div class="container">
         <div class="row text-center d-flex flex-nowrap justify-content-center pt-5 mb-3">
@@ -70,11 +73,15 @@
           </div>
         </div>
         <div class="footer-copyright text-center py-3">© 2018 Copyright:
-          <label style="font-weight:normal;" for="footer">Website Name. All rights reserved.</label>
+          <label style="font-weight:normal;" for="footer">ConnectMe. All rights reserved.</label>
         </div>
       </div>
     </nav>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script src="scripts/userdata.js" charset="utf-8"></script>
+  <script src="scripts/userinfoformhandler.js" charset="utf-8"></script>
+  <script src="scripts/userinfo.js" charset="utf-8"></script>
 </body>
 
 </html>

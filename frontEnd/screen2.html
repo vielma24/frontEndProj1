@@ -17,7 +17,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   </nav><br><br><br><br><br>
-  <em><p class="text-center">Progress</p></em>
+  <em><p class="text-center"></p></em>
   <div class="progress">
     <div class="progress-bar" style="width:40%"></div>
   </div><br>
@@ -28,41 +28,44 @@
           <h4>What are your interests?</h4></center>
         <center>
           <h6 class="form-text text-muted">Enter three to five interests</h6></center><br>
-        <input type="interest" class="form-control" id="interest" placeholder="For example: Reading, Golf, Photography">
+        <input type="interest" name="interest" class="form-control" id="interest" placeholder="For example: Reading, Golf, Photography">
+        <small id="warningmessage" class="text-muted"></small>
       </div><br>
       <div class="form-group">
-        <div class="visible">
-          <label for="interest1">Toggle div class between visible and invisible to show labels</label>
-          <button type="button" class="close" aria-label="Close">
+        <div class="interestdiv1" style="display:none">
+          <label class="interest1" for="interest1"></label>
+          <button id="closebutton1" type="button" class="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button><br>
         </div>
-        <div class="visible">
-          <label for="interest2">interest2</label>
-          <button type="button" class="close" aria-label="Close">
+        <div class="interestdiv2" style="display:none">
+          <label class="interest2" for="interest2"></label>
+          <button id="closebutton2" type="button" class="close" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button><br>
+          </button><br>
         </div>
-        <div class="visible">
-          <label for="interest3">interest3</label>
-          <button type="button" class="close" aria-label="Close">
+        <div class="interestdiv3" style="display:none">
+          <label class="interest3" for="interest3"></label>
+          <button id="closebutton3" type="button" class="close" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button><br>
+          </button><br>
         </div>
-        <div class="visible">
-          <label for="interest4">interest4</label>
-          <button type="button" class="close" aria-label="Close">
+        <div class="interestdiv4" style="display:none">
+          <label class="interest4" for="interest4"></label>
+          <button id="closebutton4" type="button" class="close" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button><br>
+          </button><br>
         </div>
-        <div class="visible">
-          <label for="interest5">interest5</label>
-          <button type="button" class="close" aria-label="Close">
+        <div class="interestdiv5" style="display:none">
+          <label class="interest5" for="interest5"></label>
+          <button id="closebutton5" type="button" class="close" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button><br>
+          </button><br>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Next</button>
+      <div class="buttonHolder">
+          <button id="nextbutton" type="submit" class="btn btn-primary" style="width:20%;" disabled>Next</button>
+      </div>
     </form>
     <nav class="page-footer font-small">
       <div class="container">
@@ -92,12 +95,14 @@
           <label style="font-weight:normal;" for="footer">Website Name. All rights reserved.</label>
         </div>
       </div>
-    </footer>
+    </nav>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="scripts/userinterestformhandler.js" charset="utf-8"></script>
+  <script src="scripts/userinterest.js" charset="utf-8"></script>
 </body>
 
 </html>

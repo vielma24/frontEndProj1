@@ -1,11 +1,45 @@
 @font-face {
+  font-family: 'airstreamregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Airstream-webfont.eot');
+  src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Airstream-webfont.woff') format('woff'), url('fonts/Airstream-webfont.ttf') format('truetype'), url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+}
+
+@font-face {
+  font-family: 'lakeshore';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/LAKESHOR-webfont.eot');
+  src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/LAKESHOR-webfont.woff') format('woff'), url('fonts/LAKESHOR-webfont.ttf') format('truetype'), url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+}
+
+@font-face {
   font-family: "Archivo Narrow";
-  font-style: bold;
+  font-style: normal;
   font-weight: normal;
   src: url("Archivo-Narrow/ArchivoNarrow-Medium.ttf");
 }
 .header {
   color: white;
+}
+
+a {
+  color: white;
+}
+.progress {
+  margin-left: auto;
+  margin-right:auto;
+  width:60%;
+}
+
+.container {
+  /*background-color: rgb(108, 145, 156);
+  width:100%;*/
+}
+
+.buttonHolder{
+  text-align: center;
 }
 
 form {
@@ -14,7 +48,6 @@ form {
   border-radius: 1em;
   margin: 0 auto;
   padding: 1em;
-  width: auto;
 }
 
 div.header {
@@ -56,22 +89,22 @@ footer {
   width: 100%;
 }
 
-nav a {
+footer a {
   color: rgb(255, 255, 255);
   color: rgba(255, 255, 255, .5);
 }
 
 #Header {
+  color: rgb(112, 116, 116);
   font-family: "Archivo Narrow";
   font-size: 35px;
   font-weight: bold;
-  color: rgb(112, 116, 116);
 }
 
 .one-liner {
+  color: rgb(204, 209, 209);
   font-family: "Archivo Narrow";
   font-size: 25px;
-  color: rgb(204, 209, 209);
 }
 
 .bg {
@@ -82,13 +115,13 @@ nav a {
   color: white;
 }
 
-body { 
-  padding: 2em; 
-  background: url(background/background-img.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+body {
+  background: url(background/background-img.jpg) no-repeat center center fixed;
+  background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  padding: 2em;
+  -webkit-background-size: cover;
 }
 
 .username {
@@ -97,9 +130,6 @@ body {
 
 .user-profession {
   font-size: 20px;
-}
-
-.user-info {
 }
 
 /* Shared */
@@ -117,6 +147,7 @@ body {
   font-size: 16px;
   color: #FFF;
 }
+
 .loginBtn:before {
   content: "";
   box-sizing: border-box;
@@ -126,41 +157,43 @@ body {
   width: 34px;
   height: 100%;
 }
+
 .loginBtn:focus {
   outline: none;
 }
+
 .loginBtn:active {
   box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
 }
 
-
-/* For the login buttons */
-/* Facebook */
 .loginBtn--facebook {
   background-color: #4C69BA;
   background-image: linear-gradient(#4C69BA, #3B55A0);
   /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
   text-shadow: 0 -1px 0 #354C8C;
 }
+
 .loginBtn--facebook:before {
-  border-right: #364e92 1px solid;
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+  border-right: #364e92 1px solid;
 }
+
 .loginBtn--facebook:hover,
 .loginBtn--facebook:focus {
   background-color: #5B7BD5;
   background-image: linear-gradient(#5B7BD5, #4864B1);
 }
 
-/* Google */
 .loginBtn--google {
   /*font-family: "Roboto", Roboto, arial, sans-serif;*/
   background: #DD4B39;
 }
+
 .loginBtn--google:before {
-  border-right: #BB3F30 1px solid;
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+  border-right: #BB3F30 1px solid;
 }
+
 .loginBtn--google:hover,
 .loginBtn--google:focus {
   background: #E74B37;

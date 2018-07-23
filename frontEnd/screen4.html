@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <a class="navbar-brand" href="#">ConnectMe</a>
   </nav><br><br><br><br><br>
-  <em><p class="text-center">Progress</p></em>
+  <em><p class="text-center"></p></em>
   <div class="progress">
     <div class="progress-bar" style="width:80%"></div>
   </div><br>
@@ -24,34 +24,32 @@
       <center>
         <h4>What do you want people to do on your page?</h4></center>
       <div class="panel-body center-block">
-        <ul class="nav justify-content-center">
+        <ul id="title" class="nav justify-content-center">
           <li class="nav-item shadow p-3 mb-5 bg-white rounded">
-            <a class="nav-link" href="#">Visit my website</a>
+            <a class="nav-link" href="#" title="Visit my website">Visit my website</a>
           </li>
           <li class="nav-item shadow p-3 mb-5 bg-white rounded">
-            <a class="nav-link" href="#">Visit my restaurant</a>
+            <a class="nav-link" href="#" title="Visit my restaurant">Visit my restaurant</a>
           </li>
           <li class="nav-item shadow p-3 mb-5 bg-white rounded">
-            <a class="nav-link" href="#">Take my classes</a>
+            <a class="nav-link" href="#" title="Take my classes">Take my classes</a>
           </li>
           <li class="nav-item shadow p-3 mb-5 bg-white rounded">
-            <a class="nav-link" href="#">Get a quote</a>
+            <a class="nav-link" href="#" title="Get a quote">Get a quote</a>
           </li>
           <li class="nav-item shadow p-3 mb-5 bg-white rounded">
-            <a class="nav-link" href="#">Consulting services</a>
+            <a class="nav-link" href="#" title="Consulting services">Consulting services</a>
           </li>
           <li class="nav-item shadow p-3 mb-5 bg-white rounded">
-            <a class="nav-link" href="#">Other</a>
+            <a class="nav-link" href="#" title="Other">Other</a>
           </li>
-
         </ul>
       </div>
     </div>
-    <nav class="page-footer font-small">
+    <footer class="page-footer font-small">
       <div class="container">
         <div class="row text-center d-flex flex-nowrap justify-content-center pt-5 mb-3">
-
-          <div class="col-md-2 mb-3">
+            <div class="col-md-2 mb-3">
             <h6 class="text-uppercase font-weight-bold">
             <a href="#!">Help</a>
           </h6>
@@ -76,10 +74,12 @@
           <label style="font-weight:normal;" for="footer">Website Name. All rights reserved.</label>
         </div>
       </div>
-    </nav>
+    </footer>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="scripts/pagetitleformhandler.js" charset="utf-8"></script>
+  <script src="scripts/pagetitle.js" charset="utf-8"></script>
 </body>
 
 </html>
